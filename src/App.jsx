@@ -11,7 +11,7 @@ function App() {
   function fetchFullData() {
     setLoading(true);
     axios
-      .get("https://pokeapi.co/api/v2/pokemon")
+      .get(process.env.POKEMON_URL)
       .then((res) => {
         
         let value = searchValue.toLowerCase().trim();
