@@ -11,7 +11,7 @@ function App() {
   function fetchFullData() {
     setLoading(true);
     axios
-      .get(process.env.POKEMON_URL)
+      .get(process.env.REACT_APP_API_KEY)
       .then((res) => {
         
         let value = searchValue.toLowerCase().trim();
